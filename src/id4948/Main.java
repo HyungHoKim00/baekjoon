@@ -19,7 +19,7 @@ public class Main {
             }
         }
         boolean[] notPrimeNumbers = new boolean[246913];
-        for(int i = 2; i< 246913;i++){
+        for(int i = 2; i< 500;i++){
             if(!notPrimeNumbers[i]){
                 for(int j = 2; j*i<246913;j++){
                     notPrimeNumbers[j*i] = true;
