@@ -25,11 +25,11 @@ public class Main {
 }
 
 class MazeSearch{
-    private byte[][] maze;
+    private final byte[][] maze;
     private int shortestLength;
-    private int mazeWidth;
-    private int mazeHeight;
-    private Queue<Integer> courseQueue = new LinkedList<>();
+    private final int mazeWidth;
+    private final int mazeHeight;
+    private final Queue<Integer> courseQueue = new LinkedList<>();
     MazeSearch(int mazeWidth,int mazeHeight, String[] mazeString){
         maze = new byte[mazeWidth][mazeHeight];
         for(int y = 0; y<mazeHeight;y++){
